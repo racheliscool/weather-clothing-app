@@ -11,7 +11,7 @@ class MyApp < Sinatra::Base
     @city_state = params["user_input"]
     
     city_state = Weather.new(city_state)
-    @city_state_for_weather = city_state.where_are_you
+    @city_state_for_weather = city_state.get_weather_conditions
     erb :results
   end
 
