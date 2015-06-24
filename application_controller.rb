@@ -7,11 +7,11 @@ class MyApp < Sinatra::Base
     erb :index
   end
   
-  post '/zip_code' do 
-    @zip_code = params["user_input"]
+  post '/weather' do 
+    @city_state = params["user_input"]
     
-    zip_code = Weather.new(zip_code)
-    @zip_code_for_weather = zip_code.zip_code
+    city_state = Weather.new(city_state)
+    @city_state_for_weather = city_state.where_are_you
     erb :results
   end
 

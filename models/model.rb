@@ -16,10 +16,16 @@ class Weather
     JSON.load(opened_page)
     
   end
+  
+  def where_are_you
+    
+    
+  end
+  
+  
 end
 
 
-new_york = Weather.new(NY, New_York)
   
  
   
