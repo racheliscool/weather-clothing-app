@@ -14,7 +14,12 @@ class MyApp < Sinatra::Base
     state = params["state"]
     
     city_state = Weather.new(state, city)
-    @city_state_for_weather = city_state.get_weather_conditions
+    @city_state_for_weather=city_state.get_weather_conditions
+    @city_state_temperature=city_state.fetch_temperature
+    @city_state_description=city_state.fetch_description
+    @city = city
+    @state = state
+
     erb :results
   end
 
