@@ -19,9 +19,12 @@ class Weather
     puts @forcast_data.inspect
   end
   
-  def where_are_you
-    # code here    
+  def what_to_bring
+    if @city_state_description.include?("rain") && @city_state_description.include?("tstorm")
+      puts "You should bring an umbrella."
+    end
   end
+  @what_to_bring = what_to_bring
   
   def fetch_temperature
     @temp_f=@forcast_data["current_observation"]["temp_f"]
