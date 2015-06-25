@@ -1,18 +1,21 @@
 <!doctype html>
 <html>
   <head>
+    <link href="css/style.css" rel="stylesheet" type="style">
     <title>Weather to Wear</title>
     <link rel="stylesheet" type="text/css"
           href="../public/css/style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/2/27/Morton_Umbrella_Girl.png">
   </head>
   <body>
-    <h1>Weather in <%=@city%>, <%=@state%></h1>
     
-    <h3>The temperature is <%=@city_state_temperature%> degrees Fahrenheit, and the conditions are <%=@city_state_description%>.</h3>
+    <h1>Weather in <%=@city%>, <%=@state%></h1>
+      <div id="conditions">
+        <h3>The temperature is <%=@city_state_temperature%> degrees Fahrenheit, and the conditions are <%=@city_state_description%>.</h3>
+      </div>
     
     <h1>We suggest that you wear</h1>
-    <p><%=puts outfit%></p>
-    
+        
     <h1>We suggest that you bring</h1>
   </body>
 </html>

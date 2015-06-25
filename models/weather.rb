@@ -5,7 +5,7 @@ require 'json'
 class Weather
   attr_reader :state, :city, :temp_f, :description
   def initialize(state, city)
-    @state = state
+    @state = state.upcase
     @city = city.gsub(" ", "%20")
   end
   
@@ -74,6 +74,16 @@ end
   def fetch_description
     @description=@forcast_data["forecast"]["txt_forecast"]["forecastday"][0]["icon"]
   end
+  
+  def fetch_temperature
+    @temp_f=@forcast_data["current_observation"]["temp_f"]
+  end
+  
+  def fetch_description
+    @description=@forcast_data["forecast"]["txt_forecast"]["forecastday"][0]["icon"]
+  end
+  
+  
   
   
 end
