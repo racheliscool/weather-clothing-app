@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require_relative "models/weather.rb"
 
 class MyApp < Sinatra::Base
 
@@ -8,9 +9,11 @@ class MyApp < Sinatra::Base
   end
   
   post '/weather' do 
-    @city_state = params["user_input"]
+    # {"city" => "New York", "state" => "NY}
+    city = params["city"]
+    state = params["state"]
     
-    city_state = Weather.new(city_state)
+    city_state = Weather.new(state, city)
     @city_state_for_weather = city_state.get_weather_conditions
     erb :results
   end
