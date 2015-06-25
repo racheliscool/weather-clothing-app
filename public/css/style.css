@@ -1,10 +1,16 @@
 .content{
   text-align: center;
-  color: #64ADF5;
+  
 }
 
 
+#state {
+  color: #64ADF5;
+}
 
+#city {
+ color: #99FFFF;
+}
 
 
 #conditions {

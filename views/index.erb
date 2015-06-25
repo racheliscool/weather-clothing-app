@@ -4,15 +4,21 @@
   
   <h1>Weather to Wear</h1>
     <form action="/weather" method="POST">
-      <label>
-        Enter your city: 
-      </label>
+      <div class="content" id="city">
+        <label>
+          Enter your city: 
+        </label>
+      </div>
        <br>
       <input type="text" name="city">
       <br>
-      <label>Enter your two letter state abbreviation:</label>
+      <div class="content" id="state">
+        <label>Enter your two letter state abbreviation:</label>
+      </div>
       <br>
-      <input type="text" name="state">
+      
+        <input type="text" name="state">
+    
       <br>
       <button value="submit">Find my outfit</button>
     </form>
