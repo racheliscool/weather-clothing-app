@@ -1,6 +1,7 @@
 require 'bundler'
 Bundler.require
 require_relative "models/weather.rb"
+require 'pry'
 
 class MyApp < Sinatra::Base
 
@@ -17,6 +18,10 @@ class MyApp < Sinatra::Base
     @city_state_for_weather=city_state.get_weather_conditions
     @city_state_temperature=city_state.fetch_temperature
     @city_state_description=city_state.fetch_description
+    @wear_this = city_state.decide(@city_state_temperature)
+    @bring_this = city_state.what_to_bring(@city_state_description)
+   
+    
     @city = city
     @state = state
 
