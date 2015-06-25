@@ -5,7 +5,7 @@ require 'json'
 class Weather
   attr_reader :state, :city
   def initialize(state, city)
-    @state = state
+    @state = state.upcase
     @city = city.gsub(" ", "%20")
   end
   
