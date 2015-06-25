@@ -12,8 +12,13 @@
         <h3>The temperature is <%=@city_state_temperature%> degrees Fahrenheit, and the conditions are <%=@city_state_description%>.</h3>
       </div>
     
-    <h1>We suggest that you wear</h1>
-        
-    <h1>We suggest that you bring</h1>
+    <h1>What to wear</h1>
+        <div id="outfit">
+          <h3>You should wear  <%= @wear_this %></h3>
+    </div>
+    <h1>What to bring</h1>
+        <div id="bring">
+          <h3><%= @bring_this %></h3>
+    </div>
   </body>
 </html>
