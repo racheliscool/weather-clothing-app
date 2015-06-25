@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 #conditions {
   
   
+=======
+body {
+  color: hotpink;
+  background: #9ADAF9;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.content {
+  text-align: center;
+>>>>>>> 9679f1f46e21844e4d709ce2efb6eb4b2ffd4dd8
 }
