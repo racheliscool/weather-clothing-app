@@ -2,16 +2,52 @@
   text-align: center;
   
 }
+
+#title {
+  color: #1414A7;
+  
+}
 #state {
-  color: #64ADF5;
+  color: #1414A7;
 }
 
 #city {
- color: #64ADF5;
+ color: #1414A7;
 }
 
+h2 {
+  color: #1414A7
+  
+}
+
+h1 {
+  
+  color: #1414A7
+}
+
+p {
+  color: #1414A7
+  
+}
 
 #conditions {
   text-align: center;
   
+}
+
+#about {
+  color: #1414A7;
+  
+}
+
+body {
+  background-color: #F6FDFF;
+}
+
+#results_body {
+  color: red;
+}
+
+#results-text {
+  text-align: center;
 }

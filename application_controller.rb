@@ -28,7 +28,7 @@ class MyApp < Sinatra::Base
     erb :results
   end
 
-  get '/weather-clothing-app/views/about.erb' do
+  get '/about' do
     erb :about
   end
   

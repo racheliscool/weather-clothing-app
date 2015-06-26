@@ -68,7 +68,7 @@ class Weather
      elsif description.include?("snow") == true || description.include?("chancesnow") == true || description.include?("sleet") == true
        return "You should wear snowboots."
       else 
-       return "Your personal flair."
+       return "Your personal flair!"
       end
     end
  end  
