@@ -28,5 +28,8 @@ class MyApp < Sinatra::Base
     erb :results
   end
 
-
+  get '/about' do
+    erb :about
+  end
+  
 end
