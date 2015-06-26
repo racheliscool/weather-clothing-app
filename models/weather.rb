@@ -62,15 +62,15 @@ class Weather
         return "a short-sleeved shirt or tank top with shorts or a skirt, or a light summer dress."
       end
     end  
-#   def what_to_bring(description)
-#     if @city_state_description.include?("rain") == true || @city_state_description.include?("tstorm") == true || @city_state_description.include?("sleet") == true
-#        puts "You should bring an umbrella and rainboots."
-#     elsif @city_state_description.include?("snow") == true || @city_state_description.include?("slush") == true || @city_state_description.include?("sleet") == true
-#        puts "You should wear snowboots."
-#       else 
-#        puts "Your personal flair."
-#       end
-#     end
+   def what_to_bring(description)
+     if description.include?("rain") == true || description.include?("chancerain") == true || description.include?("sleet") == true
+       return "You should bring an umbrella and rainboots."
+     elsif description.include?("snow") == true || description.include?("chancesnow") == true || description.include?("sleet") == true
+       return "You should wear snowboots."
+      else 
+       return "Your personal flair."
+      end
+    end
  end  
   
 
