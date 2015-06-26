@@ -19,7 +19,7 @@ class MyApp < Sinatra::Base
     @city_state_temperature=city_state.fetch_temperature
     @city_state_description=city_state.fetch_description
     @wear_this = city_state.decide(@city_state_temperature)
-    @bring_this = city_state.what_to_bring(@city_state_description)
+#     @bring_this = city_state.what_to_bring(@city_state_description)
    
     
     @city = city

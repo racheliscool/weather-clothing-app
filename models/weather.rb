@@ -11,7 +11,7 @@ class Weather
   
   def get_weather_conditions
     
-    url = "http://api.wunderground.com/api/4966e73960475833/forecast/geolookup/conditions/q/NY/New%20York.json"
+    url = "http://api.wunderground.com/api/4966e73960475833/forecast/geolookup/conditions/q/#{state}/#{city}.json"
     
     #url = "http://api.wunderground.com/api/4966e73960475833/forecast/geolookup/conditions/q/#{state}/#{city}.json"
     opened_page = open(url)
@@ -62,15 +62,15 @@ class Weather
         return "a short-sleeved shirt or tank top with shorts or a skirt, or a light summer dress."
       end
     end  
-  def what_to_bring(description)
-    if @city_state_description.include?("rain") == true || @city_state_description.include?("tstorm") == true || @city_state_description.include?("sleet") == true
-       puts "You should bring an umbrella and rainboots."
-    elsif @city_state_description.include?("snow") == true || @city_state_description.include?("slush") == true || @city_state_description.include?("sleet") == true
-       puts "You should wear snowboots."
-      else 
-       puts "Your personal flair."
-      end
-    end
+#   def what_to_bring(description)
+#     if @city_state_description.include?("rain") == true || @city_state_description.include?("tstorm") == true || @city_state_description.include?("sleet") == true
+#        puts "You should bring an umbrella and rainboots."
+#     elsif @city_state_description.include?("snow") == true || @city_state_description.include?("slush") == true || @city_state_description.include?("sleet") == true
+#        puts "You should wear snowboots."
+#       else 
+#        puts "Your personal flair."
+#       end
+#     end
  end  
   
 
